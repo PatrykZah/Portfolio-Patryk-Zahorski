@@ -1,0 +1,22 @@
+
+footer {
+	color: black;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	position: relative;
+	
+	span {
+		position: absolute;
+		left: 160px;
+		font-size: 14px;
+		line-height: 40px;
+		color: #555555;
+		font-family: "Montserrat";
+		
+		@media (max-width: 1090px) {
+			left: 0;
+			right: 0;
+			top: 30px;
+		}
+	}
+}

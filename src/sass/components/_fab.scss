@@ -1,0 +1,39 @@
+.fab{
+	color: black;
+	font-size: 20px;
+	background-color: #f9f9f9;
+	border: 3px solid #222222;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 35px;
+	vertical-align: middle;
+	transition: linear .3s;
+	cursor: pointer;
+	
+	+ .fab {
+		margin-left: 10px;
+
+	}
+	
+	&:hover {
+		color: white;
+	}
+	
+	&.fa-twitter:hover {
+		background-color: #00aced;
+	}
+	
+	&.fa-facebook-f:hover {
+		background-color: #3b5998;
+	}
+	
+	&.fa-pinterest-p:hover {
+		background-color: #cb2028;
+	}
+	
+	&.fa-google-plus-g:hover {
+		background-color: #d95232;
+	}
+}

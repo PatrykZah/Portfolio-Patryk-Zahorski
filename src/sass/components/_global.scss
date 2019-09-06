@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Wisdom";
+  src: url(../webfonts/WisdomScriptAJ.ttf);
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+	box-sizing: border-box;
+	margin: auto;
+	font-size: 0;
+	text-align: center;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	all: unset;
+	cursor: pointer;
+} 
+
+p {
+	a {
+		text-decoration: underline;
+	}
+}
+
+
+#main > section {
+
+	//margin: auto;
+	padding-top: 112px;
+	padding-bottom: 110px;
+	
+	& > * {
+		max-width: 1400px;
+	}
+}
+
+body {
+	background-color: rgb(33,33,33);
+}
+
+/*
+section:nth-child(2n+1) {
+	background-color: #f7f7f7;
+}
+
+*/
+
+.title {
+	margin-bottom: 78px;
+	b {
+		font-size: 40px;
+		letter-spacing: -1px;
+		//color: #222222;
+		color: white;
+		font-family: "Montserrat";
+		text-shadow: 1px 0,0 1px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	
+	p {
+		font-size: 18px;
+		color: #777777;
+		font-family: "Droid Serif";
+		font-style: italic;
+		text-align: center;
+		padding-top: 10px;
+	}
+}

@@ -1,0 +1,88 @@
+#main_nav {	
+	position: absolute;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	margin: 35px 15vw 0 auto;
+	flex-wrap: wrap;
+	color: white;
+	letter-spacing: 5px;
+	font-weight: bold;
+	transition: 1s;
+
+	&:hover a{
+		color: #20A0FF !important;;
+	}
+	
+	a {
+		font-size: 14px;
+		font-family: "Montserrat";
+		text-transform: uppercase;
+		line-height: 3;
+		padding: 5px 15px 5px 15px;
+		transition: 1s;
+		transform: scale(1);
+		text-shadow: 0 0 2px black,0 0 15px white;
+		&:hover{
+			text-shadow: 0 0 5px black,0 0 10px red,0 0 15px red,0 0 3px yellow !important;
+			color: burlywood !important;
+			transform: scale(1.6);
+			z-index: 1;
+			padding: 5px 0 5px 0;
+			margin: 0 15px;
+		}
+	}
+
+	&.nav_top {
+		background: rgba(0, 0, 0, 0.5);
+		border-radius: 0 0 48% 48%;
+		padding: 0 30px 20px 30px;
+		position: fixed;
+		float: none;
+		left: 50%;
+		transform: translate(-50%,calc(-100% + 40px));
+		margin: 0;
+		z-index: 1;
+		color: grey;
+		
+		&:hover {
+			transform: translate(-50%,0);
+		}
+		
+		/*
+	
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -50px;
+			right: -50px;
+			bottom: -10px;
+		}
+		*/
+		
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			//left: -50px;
+			//right: -50px;
+			bottom: -10px;
+			width: 50px;
+			background-image: url('../images/Icon-Expand.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 80px;
+		}
+		a {
+			text-shadow: 0 0 2px black,0 0 4px black,0 0 10px white,0 0 20px white;
+		}
+	}
+	
+		
+	
+	@media (max-width: 700px) {
+		flex-flow: column;
+	}
+	
+}
