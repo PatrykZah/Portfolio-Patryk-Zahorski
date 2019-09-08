@@ -35,6 +35,11 @@ p a {
 
 body {
   background-color: #212121;
+  background-image: url("../images/cosmos-1853491_1280.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 890px;
+  background-size: contain;
+  background-blend-mode: lighten;
 }
 
 /*
@@ -70,7 +75,6 @@ section:nth-child(2n+1) {
   color: black;
   font-size: 20px;
   background-color: #f9f9f9;
-  border: 3px solid #222222;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -89,20 +93,13 @@ section:nth-child(2n+1) {
   color: white;
 }
 
-.fab.fa-twitter:hover {
-  background-color: #00aced;
+.fab.fa-github:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
-.fab.fa-facebook-f:hover {
+.fab.fa-linkedin-in:hover {
   background-color: #3b5998;
-}
-
-.fab.fa-pinterest-p:hover {
-  background-color: #cb2028;
-}
-
-.fab.fa-google-plus-g:hover {
-  background-color: #d95232;
 }
 
 #main_nav {
@@ -173,20 +170,17 @@ section:nth-child(2n+1) {
   transform: translate(-50%, 0);
 }
 
-#main_nav.nav_top:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: -10px;
-  width: 50px;
-  background-image: url("../images/Icon-Expand.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80px;
-}
-
 #main_nav.nav_top a {
   text-shadow: 0 0 2px black,0 0 4px black,0 0 10px white,0 0 20px white;
+}
+
+#main_nav.nav_top .fas {
+  font-size: 50px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  color: darkseagreen;
 }
 
 @media (max-width: 700px) {
@@ -284,32 +278,18 @@ section:nth-child(2n+1) {
 }
 
 #portfolio .items {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-  max-width: 980px;
-}
-
-@media (max-width: 1000px) {
-  #portfolio .items {
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-  }
-}
-
-@media (max-width: 620px) {
-  #portfolio .items {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 #portfolio a {
   background-color: #acc5ff;
   width: 300px;
-  margin: auto;
-  margin-bottom: 50px;
+  margin: 3vw;
 }
 
 #portfolio a .img {
@@ -363,9 +343,10 @@ section:nth-child(2n+1) {
   background-image: url("../images/Map Image.png");
   background-position: 600px 195px;
   background-size: 100%;
-  background-color: #212121;
+  /*! background-color: #212121; */
   background-repeat: no-repeat;
   margin-top: 10px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #212121 10%, #212121 100%);
 }
 
 #contact .title b {

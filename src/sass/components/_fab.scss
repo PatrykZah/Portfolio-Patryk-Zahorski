@@ -2,7 +2,7 @@
 	color: black;
 	font-size: 20px;
 	background-color: #f9f9f9;
-	border: 3px solid #222222;
+	//border: 3px solid #222222;
 	width: 35px;
 	height: 35px;
 	border-radius: 50%;
@@ -21,19 +21,13 @@
 		color: white;
 	}
 	
-	&.fa-twitter:hover {
-		background-color: #00aced;
+	&.fa-github:hover {
+		color: black;
+		background-color: rgba(255, 255, 255, 0.7)
 	}
 	
-	&.fa-facebook-f:hover {
+	&.fa-linkedin-in:hover {
 		background-color: #3b5998;
 	}
-	
-	&.fa-pinterest-p:hover {
-		background-color: #cb2028;
-	}
-	
-	&.fa-google-plus-g:hover {
-		background-color: #d95232;
-	}
+
 }

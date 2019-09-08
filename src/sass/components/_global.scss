@@ -39,7 +39,12 @@ p {
 }
 
 body {
-	background-color: rgb(33,33,33);
+  background-color: rgb(33, 33, 33);
+  background-image: url("../images/cosmos-1853491_1280.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 890px;
+  background-size: contain;
+  background-blend-mode: lighten;
 }
 
 /*

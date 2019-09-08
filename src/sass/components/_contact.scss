@@ -1,11 +1,12 @@
 
 #contact {
-	background-image: url("../images/Map Image.png");
-	background-position: 600px 195px;
-	background-size: 100%;
-	background-color: rgb(33,33,33); // Tint color
-	background-repeat: no-repeat;
-	margin-top: 10px;
+  background-image: url("../images/Map Image.png");
+  background-position: 600px 195px;
+  background-size: 100%;
+  /*! background-color: #212121; */
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgb(33, 33, 33) 10%,rgb(33, 33, 33) 100%);
 	
 	.title b{
 		color: white;
