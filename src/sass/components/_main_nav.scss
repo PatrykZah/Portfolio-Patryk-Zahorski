@@ -9,10 +9,6 @@
 	letter-spacing: 5px;
 	font-weight: bold;
 	transition: 1s;
-
-	&:hover a{
-		color: #20A0FF !important;
-	}
 	
 	a {
 		font-size: 14px;
@@ -48,18 +44,6 @@
 		&:hover {
 			transform: translate(-50%,0);
 		}
-		
-		/*
-	
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: -50px;
-			right: -50px;
-			bottom: -10px;
-		}
-		*/
 
 		a {
 			text-shadow: 0 0 2px black,0 0 4px black,0 0 10px white,0 0 20px white;
@@ -72,13 +56,16 @@
 			left: 0;
 			right: 0;
 			color: darkseagreen;
+			transition: 1s;
+		}
+		
+		&:hover {
+			.fas {
+				text-shadow: 0 0 4px black,0 0 10px #689d43,0 0 20px #e3e3e3;
+			}
+			a{
+				color: #20A0FF;
+			}
 		}
 	}
-	
-	
-	
-	@media (max-width: 700px) {
-		flex-flow: column;
-	}
-	
 }

@@ -1,9 +1,10 @@
 
 footer {
 	color: black;
-	margin-top: 20px;
-	margin-bottom: 30px;
 	position: relative;
+	background: #212121;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	
 	span {
 		position: absolute;
@@ -13,10 +14,17 @@ footer {
 		color: #555555;
 		font-family: "Montserrat";
 		
-		@media (max-width: 1090px) {
+		
+	}
+	
+	@media (max-width: 1090px) {
+		margin-top: -30px;
+		
+		span {
 			left: 0;
 			right: 0;
-			top: 30px;
-		}
+			top: 55px;
+		}	
 	}
 }
+

@@ -1,35 +1,27 @@
-
-
 #home{
   height: calc(100vh + 50px);
   min-height: 600px;
   max-height: 1375px;
   color: white;
   padding-top: 0;
-  background-image: 
+  background: 
 		url("../images/Background Image 1.jpg"), 
 		linear-gradient(180deg, rgba(255, 255, 255, 0) 100vh, rgb(33, 33, 33) 100%);
   background-position: center top;
   background-size: cover;
   background-blend-mode: hue;
 
-	
-	#logo{
-		float: left;
-		margin: 0 50px 0 35px;
-		font-size: 26px;
-		letter-spacing: 1px;
-		line-height: 100px;
-		color: #fed136;
-		font-family: "Wisdom";
-	}
-	
+
 	.content {
-		margin-top: calc(100px + 20vh);
-		background-color: rgba(0,0,0,0.5);
-		border-radius: 25px;
+		//margin-top: calc(100px + 20vh);
+		position: absolute;
+		top: calc(50vh - 10%);
+		left: 0;
+		right: 0;
 		padding: 30px;
-		width: max-content;
+		max-width: max-content;
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 25px;
 	}
 	
 	.content * {

@@ -7,72 +7,91 @@
 		//max-width: 1200px;
 		flex-wrap: wrap;
 		justify-content: center;
-
+		margin: 0 30px;
 		
-		@media (max-width: 1000px) {
-			//grid-template-columns: auto auto;
-		}
-		
-		@media (max-width: 620px) {
-			//grid-template-columns: auto;
-		}
-	}
-	
-	a {
-		background-color: #acc5ff;
-		width: 300px;
-		//margin: auto;
-		//margin-bottom: 50px;
-		margin: 3vw;
-
-		.img {
-			overflow: hidden;
-			position: relative;
+		.item {
+			background-color: #acc5ff;
+			background-color: rgb(138, 136, 97);
+			width: 500px;
+			//margin: auto;
+			//margin-bottom: 50px;
+			margin: 3vw;
+			transition: 0.5s;
 			
-			& > div {
-				top: 0;
-				left: 0;
-				height: 300px;
-				width: 100%;
-				padding-top: 100%;
-				background-repeat: no-repeat;
-				background-position: center;
-				transition: 1s;
+			.img_container {
+				overflow: hidden;
+				position: relative;
+				padding-top: 56%;
+				
+				img {
+					width: 100%;
+					position: absolute;
+					left: 0;
+					top: 0;
+					bottom: 0;
+				}
+				
+				.overlay{
+					content: '';
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					right: 0;
+					width: 100%;
+					background-color:	rgba(0, 0, 0, 0.6);
+					opacity: 0;
+					transition: 1s;
+					a {
+						background-color: white;
+						border-radius: 20%;
+						position: relative;
+						top: calc(50% - 12.5px);
+						margin: 0 5% 0 5%;
+						cursor: pointer;
+						font-size: 20px;
+						padding: 5px;
+						color: #f7deb1;
+						transition: 0.4s;
+						
+						* {
+							font-size: inherit;
+						}
+						&:hover {
+							box-shadow: 0 0 10px 3px;
+						}
+						&:nth-child(1){
+							background-color: #262626;
+						}
+						
+						&:nth-child(2){
+							background-color: #9f1d1d;
+						}
+					}
+				}
 			}
-			
-		}
-		
-		&:hover {
-			& > div:after {
-				content: '';
-				position: absolute;
-				top: 0;
-				right: 0;
-				height: 100%;
-				width: 100%;
-				background-color:	rgba(0, 0, 0, 0.6);
-			}
-			.img > div {
+			&:hover {
 				transform: scale(1.2);
+				.overlay{
+					opacity: 1;
+				}
+			}
+			
+			b {
+				font-size: 18px;
+				letter-spacing: 0px;
+				color: #333333;
+				font-family: "Montserrat";
+				line-height: 70px;
+			}
+			
+			p {
+				font-size: 14px;
+				color: #464646;;
+				font-family: "Droid Serif";
+				font-style: italic;
+				margin-bottom: 25px;
+				margin-top: -23px;
 			}
 		}
-		
-		b {
-			font-size: 18px;
-			letter-spacing: 0px;
-			color: #333333;
-			font-family: "Montserrat";
-			line-height: 70px;
-		}
-		
-		p {
-			font-size: 14px;
-			color: #737373;
-			font-family: "Droid Serif";
-			font-style: italic;
-			margin-bottom: 25px;
-			margin-top: -23px;
-		}
 	}
-	
 }
