@@ -274,7 +274,7 @@ section:nth-child(2n+1) {
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center;
-  margin: 0 30px;
+  margin: 0 auto;
 }
 
 #portfolio .items .item {
